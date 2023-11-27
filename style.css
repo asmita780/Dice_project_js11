@@ -1,0 +1,107 @@
+ /* Extra small devices (phones, 600px and down) */
+ @media only screen and (max-width: 600px){
+     .container{
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        gap: 15px; /* Add some spacing between items */
+        text-align: center;
+
+    }
+     .button {
+        left: 50%; /* Center the button horizontally */
+        transform: translateX(-50%); /* Adjust position */
+
+    }
+     .head{
+        font-size: 0.9rem;
+        color: yellow;
+    }
+
+ }
+
+
+
+ /* Small devices (portrait tablets and large phones, 600px and up) */
+ @media only screen and (min-width: 600px) {
+    .button {
+        left: 50%; /* Center the button horizontally */
+        transform: translateX(-10%); /* Adjust position */
+        bottom: 10rem;
+    }
+    .head{
+        top: 150px;
+    }
+    .container{
+        top: 530px;
+    }
+ }
+ 
+ /* Medium devices (landscape tablets, 768px and up) */
+ @media only screen and (min-width: 768px) {
+
+
+ }
+ 
+ /* Large devices (laptops/desktops, 992px and up) */
+ @media only screen and (min-width: 992px) {
+
+ }
+ 
+ /* Extra large devices (large laptops and desktops, 1200px and up) */
+ @media only screen and (min-width: 1200px) {
+
+ } 
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(background.jpeg);
+}
+
+.head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 50px;
+    color: white;
+}
+
+.container{
+    display: flex;
+    gap: 140px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 130px;
+}
+
+.player{
+    display: flex;
+    padding-bottom: 50px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-style: italic;
+}
+
+.dices{
+    width: 200px;
+    height: 200px;
+}
+
+
+.button {
+    position: relative;
+    top: 200px;
+    left: 47%;
+    font-size: 16px;
+    color: black;
+    background-color: white;
+    padding:3px 23px 2px;
+    border-radius: 15px;
+}
